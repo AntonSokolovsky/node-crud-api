@@ -1,2 +1,5 @@
 # node-crud-api
-pet-project RSS
+
+This is a study project.
+My task is to implement simple CRUD API using in-memory database underneath.
+The whole project is in `develop` branch
