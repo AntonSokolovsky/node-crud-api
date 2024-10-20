@@ -1,13 +1,13 @@
 import { createServer } from 'http';
 import dotenv from 'dotenv';
+import { handleUserRoutes } from './routes/routes';
 
 dotenv.config();
+
 const PORT = process.env.PORT || 4000;
 
 const server = createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Server is running');
+  handleUserRoutes(req, res);
 });
 
 server.listen(PORT, () => {
