@@ -3,9 +3,12 @@ import http from 'http';
 import os from 'os';
 import fs from 'fs';
 import path from 'path';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const numCPUs = os.cpus().length;
-const basePort = Number(process.env.PORT || '');
+const basePort = Number(process.env.PORT || '4000');
 let currentWorker = 0;
 const usersFilePath = path.resolve(__dirname, 'users.json');
 
