@@ -4,8 +4,9 @@
   "description": "This is a study project to implement simple CRUD API",
   "main": "webpack.config.js",
   "scripts": {
-    "start:dev": "cross-env NODE_ENV=development nodemon src/server.ts",
+    "start:dev": "nodemon src/server.ts",
     "start:prod": "webpack --config webpack.config.js && node dist/main.js",
+    "start:multi": "ts-node src/multi/server.ts",
     "lint": "eslint 'src/**/*.{ts,js}'",
     "lint:fix": "eslint 'src/**/*.{ts,js}' --fix",
     "format": "prettier --write 'src/**/*.{ts,js}'"

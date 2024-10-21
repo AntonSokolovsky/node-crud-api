@@ -13,7 +13,7 @@ export const createUser = (
   age: number,
   hobbies: string[],
 ): User => {
-  const newUser = { id: uuidv4(), username, age, hobbies };
+  const newUser: User = { id: uuidv4(), username, age, hobbies };
   users.push(newUser);
   return newUser;
 };
